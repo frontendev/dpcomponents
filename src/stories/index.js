@@ -10,8 +10,5 @@ import Sidebar from '../components/sidebar';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>);
-
 storiesOf('Sidebar', module)
   .add('with text', () => <Sidebar onClick={action('clicked')}>Hello Sidebar</Sidebar>);
